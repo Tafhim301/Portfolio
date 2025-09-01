@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -41,7 +42,7 @@ export default function ContactPage() {
     },
   });
 
-  const onSubmit = async (values: ContactForm) => {
+  const onSubmit = async (_values: ContactForm) => {
     if (!formRef.current) return;
     setLoading(true);
 
@@ -74,14 +75,14 @@ export default function ContactPage() {
             Contact Information
           </CardTitle>
           <p className="text-center text-gray-400 mt-2">
-            Phone: <span className="text-blue-400">+880 1234 567 890</span> | 
-            Email: <span className="text-blue-400">your@email.com</span>
+            Phone: <span className="text-blue-400">+880 1638-823556</span> | 
+            Email: <span className="text-blue-400">tafhimul301@gmail.com</span>
           </p>
         </CardHeader>
         <CardContent>
           <Form {...form}>
             <form ref={formRef} onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              {/* Name */}
+          
               <FormField
                 control={form.control}
                 name="name"
@@ -100,7 +101,7 @@ export default function ContactPage() {
                 )}
               />
 
-              {/* Email */}
+       
               <FormField
                 control={form.control}
                 name="email"
@@ -120,7 +121,7 @@ export default function ContactPage() {
                 )}
               />
 
-              {/* Message */}
+     
               <FormField
                 control={form.control}
                 name="message"

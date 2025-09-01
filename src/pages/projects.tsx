@@ -92,7 +92,7 @@ export default function ProjectsPage() {
                    <div className="flex justify-center items-center px-4 py-2 gap-1"> Live Demo</div>
                   </a>
 
-                <Button className="py-5"><Link to={`/projects/${project.id}`}>View Details</Link></Button>
+               <Link to={`/projects/${project.id}`}><Button className="py-5 w-full hover:cursor-pointer">View Details</Button></Link> 
                 </div>
               </Card>
             </motion.div>

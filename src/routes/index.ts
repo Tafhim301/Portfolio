@@ -2,8 +2,10 @@ import App from "@/App";
 import ContactPage from "@/components/Contact";
 import NotFound from "@/components/NotFound";
 import SkillsSection from "@/components/Skills";
+import BlogsPage from "@/pages/Blogs";
 import HomePage from "@/pages/HomePage";
 import ProjectsPage from "@/pages/projects";
+import SingleBlog from "@/pages/SingleBlog";
 import SingleProject from "@/pages/SingleProject";
 import { createBrowserRouter } from "react-router";
 
@@ -34,7 +36,15 @@ export const router = createBrowserRouter([
         {
             path : '/contact',
             Component : ContactPage
-        }
+        },
+        {
+            path : '/blogs',
+            Component : BlogsPage
+        },
+        {
+            path : '/blogs/:id',
+            Component : SingleBlog
+        },
     ]
   },
 ]);
