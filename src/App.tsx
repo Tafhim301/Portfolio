@@ -1,5 +1,6 @@
-import Hero from "./components/Hero"
-import SkillsSection from "./components/Skills"
+import { Outlet } from "react-router"
+import CommonLayout from "./components/Layout/CommonLayout"
+
 
 function App() {
 
@@ -7,8 +8,9 @@ function App() {
   return (
 
     <div>
-      <Hero></Hero>
-      <SkillsSection></SkillsSection>
+      <CommonLayout>
+        <Outlet></Outlet>
+      </CommonLayout>
 
 
     </div>

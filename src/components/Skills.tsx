@@ -20,9 +20,9 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="w-full my-14 bg-gray-900 text-gray-100 py-20 md:py-28 skills"
+      className="w-full bg-gray-900 text-gray-100 py-20 md:py-28"
     >
-      <div className="container mx-auto max-w-6xl px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-8">
      
         <motion.div
           initial={{ opacity: 0, y: 20 }}
