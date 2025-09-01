@@ -1,4 +1,6 @@
 import App from "@/App";
+import ContactPage from "@/components/Contact";
+import NotFound from "@/components/NotFound";
 import SkillsSection from "@/components/Skills";
 import HomePage from "@/pages/HomePage";
 import ProjectsPage from "@/pages/projects";
@@ -9,6 +11,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
+    ErrorBoundary : NotFound,
     children : [
         {
             path : '/',
@@ -27,6 +30,10 @@ export const router = createBrowserRouter([
         {
             path : '/skills',
             Component : SkillsSection
+        },
+        {
+            path : '/contact',
+            Component : ContactPage
         }
     ]
   },

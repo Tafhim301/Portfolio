@@ -72,7 +72,7 @@ export default function ProjectsPage() {
                     ))}
                   </div>
                 </CardContent>
-                <div className="mt-auto items-center flex gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   {project.github && (
                     <a
                       href={project.github}
@@ -80,7 +80,7 @@ export default function ProjectsPage() {
                       rel="noopener noreferrer"
                       className=" bg-gray-700 text-gray-300 rounded-lg hover:bg-gray-600 transition font-semibold"
                     >
-                    <div className="flex items-center p-2 gap-1"><GithubIcon></GithubIcon> GitHub</div>
+                    <div className="flex justify-center items-center p-2 gap-1"><GithubIcon></GithubIcon> GitHub</div>
                     </a>
                   )}
                   <a
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
                     rel="noopener noreferrer"
                     className=" bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition font-semibold"
                   >
-                   <div className="flex items-center px-4 py-2 gap-1"> Live Demo</div>
+                   <div className="flex justify-center items-center px-4 py-2 gap-1"> Live Demo</div>
                   </a>
 
                 <Button className="py-5"><Link to={`/projects/${project.id}`}>View Details</Link></Button>

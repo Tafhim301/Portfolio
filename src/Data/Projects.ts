@@ -13,7 +13,7 @@ import {
 export const projects = [
   {
     id: "65e23c09f87c1d7e5b6a7c8d",
-    title: "DigiPay Frontend",
+    title: "DigiPay",
     shortDescription:
       "A secure, role-based digital wallet frontend inspired by bKash & Nagad, with interactive dashboards and guided tours.",
     broadDescription: `
@@ -47,7 +47,7 @@ With a modular architecture and clean codebase, DigiPay is built to mimic real-w
   },
   {
     id: "65e23c09f87c1d7e5b6a7c9v",
-    title: "Medicare Diagnostic Center Management",
+    title: "Medicare",
     shortDescription:
       "A full-stack diagnostic center management system for patient appointments, test results, and admin operations.",
     broadDescription: `

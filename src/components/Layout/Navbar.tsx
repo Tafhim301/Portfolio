@@ -1,6 +1,7 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 
 export default function Navbar() {
+  const location = useLocation()
   const navLinks = [
     { name: "Home", link: "/", page: "Route" },
     { name: "Skills", link: "/skills", page: "Route" },
@@ -33,7 +34,7 @@ export default function Navbar() {
                 <li key={index}>
                   <Link
                     to={link.link}
-                    className="transition-colors duration-300 hover:text-blue-400"
+                    className={location.pathname === link.link ? `bg-gray-700 py-1 px-3 rounded` : 'transition-colors duration-300 hover:text-blue-400'}
                   >
                     {link.name}
                   </Link>
