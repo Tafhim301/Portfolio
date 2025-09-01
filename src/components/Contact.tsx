@@ -64,7 +64,7 @@ export default function ContactPage() {
 
   return (
     <motion.div
-      className="min-h-screen flex items-center justify-center bg-gray-950 px-4"
+      className="min-h-screen py-20 flex items-center justify-center bg-gray-950 px-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}

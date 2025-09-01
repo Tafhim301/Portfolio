@@ -1,4 +1,5 @@
 
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 import type { ReactNode } from "react";
 
@@ -11,6 +12,7 @@ export default function CommonLayout({children} : Iprops) {
     <div>
         <Navbar></Navbar>
         {children}
+        <Footer></Footer>
        
     </div>
   )
